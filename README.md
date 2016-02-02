@@ -23,3 +23,9 @@ pair_style        style cutoff LJ_flag TORSION_flag REBO_flag
 - LJ_flag = switches on/off the Morse potentials
 - TORSION_flag = switches on/off the AIREBO torsion energies
 - REBO_flag = switches on/off the covalent REBO2 energies
+
+A typical implementation in a LAMMPS script would be:
+```
+pair_style        airebo_morse 3.0 1 1 1
+pair_coeff        * * CH.airebo-m C H
+````
