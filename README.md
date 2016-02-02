@@ -28,4 +28,7 @@ A typical implementation in a LAMMPS script would be:
 ```
 pair_style        airebo_morse 3.0 1 1 1
 pair_coeff        * * CH.airebo-m C H
-````
+```
+**Note**: The AIREBO-M Morse potentials were parameterized using a cutoff of 3.0 (sigma). Modifying this cutoff may effect simulation accuracy.
+
+The **REBO_flag** is included so that the Morse potentials can be used with other implementations of the REBO2 covalent interactions. For example, one can use the REBO_flag to disable the REBO2 term of AIREBO-M, and use *pair_style hybrid/overlay* replace it with the bond-screening version (REBO2Scr) of [Pastewka et al., Phys. Rev. B 78, 161402 (2008)](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.161402) bond-screening  
