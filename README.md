@@ -15,4 +15,11 @@ Just place the .cpp and .h files in the **lammps[version]/src/** directory and c
 
 ##Usage in LAMMPS
 
-Using AIREBO-M in LAMMPS is identical to using [AIREBO](http://lammps.sandia.gov/doc/pair_airebo.html), with one important exception. The **AIREBO** pair_style takes 3 arguments: cutoff, LJ_flag, TORSION_flag.
+Using AIREBO-M in LAMMPS is identical to using [AIREBO](http://lammps.sandia.gov/doc/pair_airebo.html), with one important exception. AIREBO-M takes an additional 3rd flag in the pair_style command:
+```
+pair_style        style cutoff LJ_flag TORSION_flag REBO_flag
+```
+- cutoff = Long range cutoff of Morse potentials
+- LJ_flag = switches on/off the Morse potentials
+- TORSION_flag = switches on/off the AIREBO torsion energies
+- REBO_flag = switches on/off the covalent REBO2 energies
