@@ -31,7 +31,7 @@ pair_coeff        * * CH.airebo-m C H
 ```
 **Note**: The AIREBO-M Morse potentials were parameterized using a cutoff of 3.0 (sigma). Modifying this cutoff may effect simulation accuracy.
 
-The **REBO_flag** is included so that the Morse potentials can be used with other implementations of the REBO2 covalent interactions. For example, one can use the REBO_flag to disable the REBO2 term of AIREBO-M, and use *pair_style hybrid/overlay* replace it with the bond-screening version (**REBO2Scr**) of [Pastewka et al., Phys. Rev. B 78, 161402 (2008)](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.161402).
+The **REBO_flag** is included so that the Morse potentials can be used with other implementations of the REBO2 covalent interactions. For example, one can use the REBO_flag to disable the REBO2 term of AIREBO-M, and use *pair_style hybrid/overlay* replace it with the bond-screening version (**REBO2Scr**) of [Pastewka et al., Phys. Rev. B 78, 161402 (2008)](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.161402). We've recently used this hybrid technique to produce good quality results for polyethylene crystals in  [ACS Macro Lett., 2016, 5, pp 263–267](http://pubs.acs.org/doi/abs/10.1021/acsmacrolett.5b00838)
 ```
 pair_style        hybrid/overlay atomistica Rebo2Scr airebo_morse 3.0 1 1 0
 pair_coeff        * * atomistica C H
