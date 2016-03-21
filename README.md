@@ -1,3 +1,7 @@
+# IMPORTANT NOTE:
+AIREBO-M is now part of the main LAMMPS distribution, as part of the airebo pair_style. I encourage anyone who wants to use AIREBO-M in LAMMPS to use this version, as it is maintained and updated with all the most recent LAMMPS updates and bugfixes. I plan to maintain this repository as reliable location for airebo-m parameter files.
+-Thomas C. O'Connor (3.21.2016)
+
 # AIREBO-M
 This repository contains source files for the [LAMMPS](http://lammps.sandia.gov) implementation of the **AIREBO-M** reactive bond order potential for hydrocarbons, described in [O'Connor et al., J. Chem. Phys. 142, 024903 (2015)](http://scitation.aip.org/content/aip/journal/jcp/142/2/10.1063/1.4905549).
 
