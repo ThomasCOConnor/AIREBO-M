@@ -1,5 +1,6 @@
 # IMPORTANT NOTE:
 AIREBO-M is now part of the main LAMMPS distribution, as part of the airebo pair_style. I encourage anyone who wants to use AIREBO-M in LAMMPS to use this version, as it is maintained and updated with all the most recent LAMMPS updates and bugfixes. I plan to maintain this repository as reliable location for airebo-m parameter files.
+
 -Thomas C. O'Connor (3.21.2016)
 
 # AIREBO-M
